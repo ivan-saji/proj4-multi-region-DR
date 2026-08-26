@@ -19,7 +19,7 @@ resource "azurerm_subnet" "vnet_primary_subnet" {
 
 #----------------------------------------------------------------------
 
-#Virtual Network 2
+#Virtual Network in DR
 resource "azurerm_virtual_network" "vnet_dr" {
   name                = "vnet-dr"
   resource_group_name = azurerm_resource_group.rg_dr.name
