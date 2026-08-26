@@ -18,7 +18,7 @@ resource "azurerm_linux_virtual_machine" "vm_primary" {
   name                            = "TestVM"
   resource_group_name             = azurerm_resource_group.rg_primary.name
   location                        = azurerm_resource_group.rg_primary.location
-  size                            = "Standard_B1s"
+  size                            = "Standard_D2_v4"
   disable_password_authentication = false
   computer_name                   = "testvm"
   admin_username                  = "testadmin"
