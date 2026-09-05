@@ -14,14 +14,4 @@ resource "azurerm_storage_account" "sa_primary_cache" {
   account_kind             = "StorageV2"
 
   account_replication_type = "LRS"
-
-  # blob_properties {
-  #   delete_retention_policy {
-  #     days = 1
-  #   }
-
-  #   container_delete_retention_policy {
-  #     days = 1
-  #   }
-  # }
 }
